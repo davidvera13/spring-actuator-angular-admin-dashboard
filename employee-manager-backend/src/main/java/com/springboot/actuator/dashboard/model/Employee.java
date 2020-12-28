@@ -19,7 +19,7 @@ public class Employee implements Serializable {
     private Long id;
 
     @Column(nullable = false, updatable = false)
-    private String employeKeyId;
+    private String employeeKeyId;
 
     private String name;
 
