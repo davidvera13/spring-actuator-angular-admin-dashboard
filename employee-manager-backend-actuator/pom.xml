@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.spring.actuator</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>employee-manager-actuator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>employee-manager</name>
+    <name>employee-manager-actuator</name>
     <description>Employee Manager Application</description>
 
     <properties>
