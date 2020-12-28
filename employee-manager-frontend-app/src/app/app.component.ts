@@ -85,9 +85,8 @@ export class AppComponent implements OnInit {
   public onDeleteEmployee(employeeId: number): void {
     console.log(`Deleting employee by id: ${employeeId}`);
     this.employeeService.deleteEmployee(employeeId).subscribe(
-      (response: Employee) => {
+      (response: void) => {
         console.log(`Employee deleted`);
-        this.employee = response;
         this.getEmployees();
       },
       (error: HttpErrorResponse) => {
