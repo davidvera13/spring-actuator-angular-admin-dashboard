@@ -130,10 +130,10 @@ export class DashboardComponent  implements OnInit {
   }
 
   private processTraces(traces: any): void {
-    this.traceList = traces;
-    // this.traceList = traces.filter((trace) => {
-    //   return !trace.request.uri.includes('actuator');
-    // });
+    // this.traceList = traces;
+    this.traceList = traces.filter((trace) => {
+      return !trace.request.uri.includes('actuator');
+    });
     this.traceList.forEach(trace => {
       switch (trace.response.status) {
         case 200:
